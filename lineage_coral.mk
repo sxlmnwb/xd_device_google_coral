@@ -4,13 +4,14 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit some common Lineage stuff.
+# Inherit some common Evolution X stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/coral/aosp_coral.mk)
 
 include device/google/coral/coral/device-lineage.mk
+include device/google/coral/coral/device-evolution.mk
 
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
