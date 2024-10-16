@@ -4,19 +4,21 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit some common Evolution X stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common xdroidOSS stuff.
+$(call inherit-product, vendor/xdroid/config/common.mk)
+XDROID_MAINTAINER := sxlmnwb
+XD_BOOT := 1440
 
 # Inherit device configuration
 $(call inherit-product, device/google/coral/aosp_coral.mk)
 
 include device/google/coral/coral/device-lineage.mk
-include device/google/coral/coral/device-evolution.mk
+include device/google/coral/coral/device-xdroid.mk
 
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 4 XL
-PRODUCT_NAME := lineage_coral
+PRODUCT_NAME := xdroid_coral
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 3040
