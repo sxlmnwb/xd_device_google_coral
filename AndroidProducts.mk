@@ -21,11 +21,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_coral.mk \
-    $(LOCAL_DIR)/aosp_flame.mk \
-    $(LOCAL_DIR)/aosp_coral_hwasan.mk \
-    $(LOCAL_DIR)/aosp_flame_hwasan.mk \
+    $(LOCAL_DIR)/xdroid_coral.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_coral-userdebug \
-    aosp_flame-userdebug \
+    xdroid_coral-userdebug
